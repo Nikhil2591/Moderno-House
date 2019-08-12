@@ -178,14 +178,6 @@ class UI {
             }
         clearCart() {
 
-            // cart = [];
-            // this.setCartValues(cart);
-            // Storage.saveCart(cart);
-            // const buttons = [...document.querySelectorAll(".bag-btn")];
-            // buttons.forEach(button => {
-            // button.disabled = false;
-            // button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to bag`;
-            //     });
             let cartItems = cart.map(item => item.id);
            cartItems.forEach(id => this.removeItem(id));
            console.log(cartContent.children);
